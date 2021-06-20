@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/*ESTILOS UNIVERSALES*/
+*{
+    padding: 8;
+    margin: 3;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body {
+		background: #ffffff;
+	}
+
+	
+
+	body, input, select, textarea 
+    {
+		color: #0c7fbc;
+		font-family: 'Josefin Sans', sans-serif;/*TIPO DE LETRA FONT*/
+		font-size: 12pt; /*TAMAÑO FONT*/
+		font-weight: 800; /*GROSOR O CONTORNO FONT*/
+		line-height: 1.65em; /*SEPARACIÓN FONT*/
+	}
+
+a {
+		color: #004dfc;
+		text-decoration: underline;
+	}
+
+#D1
+{
+    position: relative;
+    left: 5px;
+    top: -20px;
+    margin: 1px; 
+}
+
+
+form input, form textarea 
+{
+    border: 2px solid #0f9ae3;
+    outline: 0;
+    padding: 1em; /* EXTENDER ETIQUETAS (CAMPOS DE TEXTO) */
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 15px; /* ESQUINAS OVALADAS ETIQUETAS */
+    /*display: block;*/
+    /*width: 100%;*/
+    margin-top: 1em; /* MARGEN ETIQUETA ENTRE CAMPO DE TEXTO */
+    font-family: 'Josefin Sans', sans-serif;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+form input:focus, form textarea:focus 
+{
+    /*CONTORNO CAMPOS DE TEXT*/
+    -moz-box-shadow: 0 0px 2px #016ae3 !important;
+    -webkit-box-shadow: 0 0px 2px #016ae3 !important;
+    box-shadow: 0 0px 2px #016ae3 !important;
+}
+
+form #input-submit 
+{
+    /*TAMAÑO*/
+    height: 60px;
+    width: 120px;
+    
+    /*MOVER*/
+    position: relative;
+    top: 10px;
+    left: 500px;
+    
+    border-radius: 20px;
+    color: white;
+    background: #15a2c4;
+    cursor: pointer;
+    margin: auto;
+    border: 2px solid #075680;
+}

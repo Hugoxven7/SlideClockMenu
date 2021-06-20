@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/*ESTILOS GENERALES*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.Contenedor
+{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+    .Contenedor p
+    {
+        margin-bottom: 40px;
+    }
+
+header nav
+{
+    background: #0aabd1;
+    margin-bottom: 10px;
+    /*AGREGAR ANIMACIÓN*/
+    -webkit-transition: all ease .1s;
+    -o-transition: all ease .1s;
+    transition: all ease .1s;
+    /*LLEVAR MENÚ A DERECHA*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*  ____________________________________________________
+    |___________STYLO PARA MENÚ PRINCIPAL___________|
+*/
+    header nav ul
+    {
+        list-style: none;
+        overflow: hidden; /*NO SE ROMPE LA ESTRUCTURA*/
+    }
+    
+        header nav ul li
+        {
+            float:left; /*PONE ELEMENTOS EN HORIZONTAL*/    
+        }        
+    
+            header nav ul li a
+            {
+                display:block;
+                padding: 20px; /*SEPARACIÓN DE OPCIONES MENÚ*/
+                color:#ffffff; /*COLOR DE OPCIONES MENÚ*/
+                text-decoration: none;
+            }
+
+                header nav ul li a:hover
+                {
+                    background: #06459b; /*FONDO AL SELECCIONAR OPCIÓN DE MENÚ*/
+                }
+
+/*  ________________________________________________
+    |___________STYLO PARA SUBMENÚS_________________|
+*/
+header nav ul ul
+{
+    background: #05828d;
+}
+
+.menu-fixed
+{
+    position: fixed; /*EL MENU QUEDA FIJO EN PANTALLA*/
+    z-index: 1000; /*PONER MENU ARRIBA DE TODOS LOS ELEMENTOS*/
+    top: 10; /*MENU QUEDA PEGADO A PARTE SUPERIOR*/
+    width: 100%; /*EXPANDIR MENÚ*/
+    max-width: 1000px; /*NO TIENE CAJA CONTENEDORA, POR LO QUE SE ASIGNA UN MAX*/
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5); /*AGREGAR SOBRA A MENÚ*/
+}
+
+.menu ul ul /*OCULTAR LOS SUBMENUS*/
+{
+    display: none;
+}
+
+.menu ul li:hover ul
+{
+    display: block; /*MOSTRAR SUBMENUS DE MENU*/
+    position: absolute; /*REDUCIR ANCHO DE SUBMENUS*/
+}
+
+
+
+/*  ___________________________________________________________
+    |______________INCIA STYLO PARA SLIDER____________________|
+*/
+
+.mainII /*CENTRAR IMAGENES*/
+{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+}
+ 
+.slides 
+{
+    width:100%;
+}
+ 
+.slides img 
+{
+    width:100%;
+}
+ 
+/*  _________________________________________________________
+    |___________ESTYLO PARA BARRA DE OPCIONES SLIDE__________|
+*/
+.slidesjs-pagination 
+{
+    background:#09a0c4; /*COLOR DE BARRA*/
+    list-style:none;
+    overflow:hidden;
+}
+ 
+.slidesjs-pagination li 
+{
+    float:left;
+}
+ 
+.slidesjs-pagination li a 
+{
+    display:block;
+    padding:10px 20px;
+    color:#fff;
+    text-decoration:none;
+}
+ 
+/*ELEMENTOS SEECIONABLES*/
+.slidesjs-pagination li a:hover 
+{
+    background:#074880;
+}
+ 
+.slides .active 
+{
+    background:#066a72;
+}
+ 
+/*BOTONES PARA LA NAVEGACIÓN PLAY / PAUSA / SIGUIENTE / ANTERIOR*/
+.slidesjs-navigation
+{
+    background:#066a72;
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    padding:12px 20px;
+    float:right;
+}
+
+
+

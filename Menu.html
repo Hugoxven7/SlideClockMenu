@@ -1,0 +1,143 @@
+<html>
+   <!-- _________________________________________
+       |__________COMIENZA HEAD______________|
+   -->
+    <head>
+        <title> A Dos Ruedas </title>
+        <meta charset="UTF-8">
+        
+        <!--__________________________________________
+            |_____________AGREGAR LIBRERIAS___________| 
+        -->    
+        <link rel="stylesheet" href="css/Style.css">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="css/StyleClock.css">
+        
+        <!-- ESTYLO DE SLIDER POR SEPARADO -->
+        <!--<link rel="stylesheet" href="css/StyleSlide.css">--> 
+        
+        <!-- BIBLIOTECA CARACTERISTICAS / FUNCIONES / ANIMACIONES-->
+        <script src="js/jQuery.js"></script>
+        <!-- CONDICIONES PARA MENÚ NO ESTATICO -->
+        <script src="js/Main.js"></script>
+        <!-- BIBLIOTECAS PARA SLIDER -->
+        <script src="js/MainSlide.js"></script>
+        <!--BIBLIOTECA PARA SLIDES DISEÑO-->
+        <script src="js/jquery.slides.js"></script>
+    </head>
+    
+    <!-- ________________________________________
+       |__________COMIENZA BODY______________|
+   -->
+    <body>
+       <header>
+          <div class="Contenedor">    
+               <div class="logo">
+                  <br/>
+                   <img src="image/ADosRuedasL4.png" alt="">
+                   <h1></h1><br/>
+               </div>
+           
+               <!-- ____________________________________________
+                   |_________MENÚ DE NAVEGACIÓN___________|
+               -->
+               <nav class="menu"> 
+                   <ul> <!-- LISTA NO ORDENADA -->
+                      <li><a href="#"> Inicio </a></li>
+                      <li><a href="#"> Nosotros </a>
+                          <ul>
+                              <li><a href="#"> Objetivo </a></li><br/>
+                              <li><a href="#"> Reglamento </a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#"> Catalogo </a>
+                          <ul>
+                              <li><a href=""> Bicicletas </a></li><br/>
+                              <li><a href=""> Equipo </a></li><br/>
+                          </ul>
+                      </li>
+                      <li><a href="#"> Realizar Renta </a>
+                          <ul>
+                              <li><a href="FormularioC.html"> Renta </a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#"> Altas </a>
+                          <ul>
+                              <li><a href="FormuUser.html"> Usuario </a></li><br/>
+                              <li><a href=""> Bicicleta </a></li><br/>
+                              <li><a href=""> Equipo </a></li><br/>
+                              <li><a href=""> Empleado </a></li><br/>
+                              <li><a href=""> Mantenimiento </a></li><br/>
+                              <li><a href=""> Inventario </a></li><br/>
+                          </ul>
+                      </li>
+                      <li><a href="#"> Información Turítica </a>
+                          <ul>
+                              <li><a href=""> Recorridos </a></li><br/>
+                              <li><a href=""> Rutas </a></li><br/>
+                              <li><a href=""> Zonas Turísticas </a></li><br/>
+                          </ul>
+                      </li>
+                      <li><a href="#"> Herramientas </a>
+                          <ul>
+                             <li><a href="#"> Cassetas </a></li><br/>
+                              <li><a href="#"> Mapas </a></li><br/>
+                              <li><a href="#"> Horrarios </a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#"> Contacto </a></li>
+                   </ul>
+               </nav>
+          </div>
+       </header>
+       
+       <!-- ___________________________________________________________________________
+        |____________CREACIÓN DE RELOJ CON CSS Y JAVASCRIPT____________________|
+    -->
+        <div class="wrap"> <!--CENTRAR EL RELOJ-->
+            <div class="widget"> <!--DISEÑO-->
+               
+               <!--DIV PARA FECHA-->
+                <div class="fecha">
+                    <p id="DiaSemana" class="DiaSemana"></p>
+                    <p id="Dia" class="Dia"></p>
+                    <p> de </p>
+                    <p id="Mes" class="Mes"></p>
+                    <p> del </p>
+                    <P id="Year" class="Year"></P>
+                </div>
+                
+                <!--DIV PARA RELOJ-->
+                <div class="reloj">
+                    <p id="Horas" class="Horas"></p>
+                    <p> : </p>
+                    <p id="Minutos" class="Minutos"></p>
+                    <p> : </p>
+                    <div class="caja-segundos"> <!-- CRCEAMOS CAJA PARA AM/PM Y SEGUNDOS -->
+                        <p id="AMPM" class="AMPM"></p>
+                        <p id="Segundos" class="Segundos"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ENLAZAR JAVASCRIPT DE RELOJ-->
+        <script src="js/Reloj.js"></script>
+       
+       <!-- _________________________________________________
+           |__________CRECIÓN DE SLIDESSHOW_________________|
+       -->
+       
+    <div class="mainII">
+        <div class="slides">
+			<img src="image/Bicicleta1.jpg" alt="">
+			<img src="image/Bicicleta2.jpg" alt="">
+			<img src="image/Bicicleta5.jpg" alt="">
+		</div>
+	</div>
+      
+      <!-- LA PRIMERA SE ENCUENTRA REPETIDA Y LA SEGUNDA ESTA ARRIBA -->
+      <!--<script src="js/jQuery191Main.js"></script>-->
+      <!--<script src="js/jquery.slides.js"></script>--> 
+        
+    </body>
+</html>

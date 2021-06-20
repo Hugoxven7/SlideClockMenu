@@ -1,0 +1,67 @@
+<html>
+    <head>
+       
+        <title> Formulario Contacto </title>
+        <meta charset="UTF-8">
+        
+        <!-- LLAMAR ARCHIVO DE ESTILO PARA DFORMULARIO -->
+        <link rel="stylesheet" href="css/StyleFC.css">
+        
+        <!-- INICIA JAVASCRIPT -->
+        <script languaje="JavaScript">
+            
+            /* FUNCIÓN VALIDAR PARA CAMPOS DE TEXTO VACÍOS*/
+            function validar(campo)
+            {
+                /* IGUALAMOS LA VALIABLE AL NOMBRE DEL FORMULARIO QUE SE EMPLEARA LA FUNCIÓN*/
+                CampoTexto = document.FormuUno.elements[campo]
+                if(CampoTexto.value == "")
+                    {
+                        /*SI EL CAMPO SE ENCUENTRA VACÍO SE MANDA LA SIGUIENTE ALERTA*/
+                        alert("El Campo Con El Nombre: "+CampoTexto.name+"... Aún Esta Vacío.");
+                        CampoTexto.focus();
+                        return false;
+                    }else
+                    {
+                        return true;
+                    }
+            }
+            
+        </script>
+        
+    </head>
+    
+    <body>
+       <form method="post" action="" name="FormuUno"> 
+        <fieldset> <!--AGRUPAR DATOS-->
+            <legend> CONTACTO </legend>
+            <div id="D1">
+                Nombre(s): <input type="text" name="Nombre Uno" size="15" placeholder="Nombre" value=""/> 
+                <input type="text" name="Nombre Dos" size="15" placeholder="Nombre" /> &nbsp;&nbsp;
+                Apellido Paterno: <input type="text" name="ApllidoP" size="18" placeholder="Apellido Paterno"/> &nbsp;&nbsp;
+                Apellido Materno: <input type="text" name="ApellidoM" size="18" placeholder="Apellido Materno"/><p/>
+
+                Fecha De Nacimiento: <input type="text" name="FechaNac" size="30" placeholder="AAAA-MM-DD"/><br/>
+                Edad: <input type="text" name="Edad" size="10" placeholder="Edad"/> &nbsp;&nbsp;
+                Sexo:&nbsp;&nbsp;  
+                        Mujer<input type="radio" name="Sexo" value="Mujer"/>
+                        Hombre<input type="radio" name="Sexo" value="Hombre"/> <br/>
+
+                Domicilio <input type="text" name="Calle" size="70" placeholder="Calle"/><p/>
+                Numero: <input type="text" name="Numero" size="10" placeholder="Numero"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                Colonia: <input type="text" name="Colonia" size="40" placeholder="Colonia"/>
+                
+                <p/>
+                Tel. Casa: <input type="text" name="Telefono" size="10" placeholder="Telefono"/> &nbsp;&nbsp;
+                Celular: <input type="text" name="Celular" size="10" placeholder="Celular"/>
+                Correo Electronico: <input type="text" name="Email" size=45 placeholder="Email"/>
+            </div>
+        </fieldset>
+        
+        <!-- ESTRUCTURA PARA BOTONO -->
+        <input type="submit" id="input-submit" value="Enviar" onClick="validar(0); validar(1); validar(2); validar(3); validar(4); validar(5); validar(6); validar(7); validar(8); validar(9); validar(10); validar(11); validar(12); validar(13); validar(14);"> 
+        <!-- SE LLAMARA LA FUNCIÓN LAS VECES QUE SEA NECESARIA PARA CADA UNA DE LAS ETIQUETAS SEGÚN SU NÚMERO -->
+        </form>
+        
+    </body>
+</html>

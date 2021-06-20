@@ -1,0 +1,73 @@
+/*ACTUALIZAR MARGENES POR DEFAULT GENERALES*/
+* {
+    margin:0;
+    padding:0;
+}
+ 
+body /*PROPIEDADES BODY*/
+{
+    
+    background:#f2f2f2;
+}
+ 
+.mainII /*CENTRAR IMAGENES*/
+{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+}
+ 
+.slides 
+{
+    width:100%;
+}
+ 
+.slides img 
+{
+    width:100%;
+}
+ 
+/*  _________________________________________________________
+    |___________ESTYLO PARA BARRA DE OPCIONES SLIDE__________|
+*/
+.slidesjs-pagination 
+{
+    background:#09a0c4; /*COLOR DE BARRA*/
+    list-style:none;
+    overflow:hidden;
+}
+ 
+.slidesjs-pagination li 
+{
+    float:left;
+}
+ 
+.slidesjs-pagination li a 
+{
+    display:block;
+    padding:10px 20px;
+    color:#fff;
+    text-decoration:none;
+}
+ 
+/*ELEMENTOS SEECIONABLES*/
+.slidesjs-pagination li a:hover 
+{
+    background:#074880;
+}
+ 
+.slides .active 
+{
+    background:#066a72;
+}
+ 
+/*BOTONES PARA LA NAVEGACIÓN*/
+.slidesjs-navigation
+{
+    background:#066a72;
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    padding:13.5px 20px;
+    float:right;
+}

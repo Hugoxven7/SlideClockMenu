@@ -1,0 +1,10 @@
+
+HTML / CSS / JS  ----- REALIZAR SLIDER BAR (HERRAMIENTAS)
+
+// PAGINA EN LA CUAL SE DESCARGA BIBLOTECAS SLIDER (PARAMETROS Y CARACTERISTÍCAS)
+	° 	http://www.slidesjs.com
+
+// PAGINA PARA ADQUIRIR ICONOS EN FORMATO FONT (BIBLIOTECAS: STYLE Y CARPETA: FONT)
+// El Archivo Style obtenido dentro del archivo comprimido se cambia el nombre a Font.css y se emplea
+unicamente fuera de las carpetas de css o cualquier otra.
+	° 	https://icomoon.io/app/#/select
